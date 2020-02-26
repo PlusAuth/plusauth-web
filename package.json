@@ -1,0 +1,26 @@
+{
+  "name": "plusauth-js",
+  "version": "1.0.0",
+  "description": "PlusAuth JavaScript Rest Client",
+  "main": "lib/index.js",
+  "module": "dist/plusauth-js.js",
+  "author": "ismail.ayaz@ekinokssoftware.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "core-js": "3",
+    "isomorphic-fetch": "^2.2.1",
+    "qs": "^6.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

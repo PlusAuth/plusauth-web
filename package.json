@@ -1,7 +1,7 @@
 {
-  "name": "plusauth-js",
+  "name": "plusauth-web",
   "version": "1.0.0",
-  "description": "PlusAuth JavaScript Rest Client",
+  "description": "PlusAuth Web Util",
   "main": "lib/index.js",
   "module": "dist/plusauth-js.js",
   "author": "ismail.ayaz@ekinokssoftware.com",

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "lib",
+    "strict": true,
+    "removeComments": true
+  },
+  "exclude": [
+    "src/interfaces/**/*"
+  ],
+  "include": [
+    "src"
+  ]
+}

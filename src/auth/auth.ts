@@ -27,7 +27,7 @@ export class AuthService extends HttpService {
    *  auth.signIn( { username: "johndoe@example.com", password: "mypassword" }, "myLdapStrategy" )
    * ```
    */
-  public signIn( fields: { [key: string]: any}, strategy?: string ): Promise<any> {
+  public signIn( fields: { [key: string]: any }, strategy?: string ): Promise<any> {
     return this.http.post( '/signin', { ...fields, strategy } );
   }
 
@@ -55,7 +55,7 @@ export class AuthService extends HttpService {
    * ```js
    *  auth.signUp( { username: "johndoe@example.com", password: "mypassword" }, "myLdapStrategy" )
    */
-  public signUp( fields: { [key: string]: any}, strategy?: string ): Promise<any> { //asdasdasdsadasdasdasdasdasdasdasdasdasdasd
+  public signUp( fields: { [key: string]: any }, strategy?: string ): Promise<any> {
     return this.http.post( '/signup', { ...fields, strategy } );
   }
 
@@ -65,21 +65,21 @@ export class AuthService extends HttpService {
 
   public requestResetPassword( email: string ): Promise<any> {
     return this.http.post( '/forgotPassword', {
-      email
+      email,
     } );
   }
 
   public resetPassword( password: string, hash: string ): Promise<any> {
     return this.http.post( `/resetPassword/${ hash }`, {
-      password
+      password,
     } );
   }
 
-  public verifyCode( code: string, type?: VerificationTokenType, token?: string ){
+  public verifyCode( code: string, type?: VerificationTokenType, token?: string ) {
     return this.http.post( `verify/${ token }`, {
       type,
-      code
-    } )
+      code,
+    } );
   }
 
   public acceptConsent() {
@@ -94,7 +94,7 @@ export class AuthService extends HttpService {
     if ( !value ) {
       return passwordRules ? { min: true } : { score: 0 };
     }
-    return true
+    return true;
     const errors: any = {};
     // eslint-disable-next-line prefer-const
     let { min, max, number, lowerCase, upperCase, customChars, customRegexp } = passwordRules;
@@ -102,16 +102,26 @@ export class AuthService extends HttpService {
     lowerCase = Number( lowerCase );
     upperCase = Number( upperCase );
     number = Number( number );
-    // eslint-disable-next-line max-len
-    if ( lowerCase && !new RegExp( `(?=(.*[a-z])${ typeof lowerCase === 'number' && lowerCase > 0 ? `{${ lowerCase },}` : '' })` ).test( value ) ) {
+    if (
+      lowerCase &&
+      !new RegExp( `(?=(.*[a-z])${ lowerCase > 0 ? `{${ lowerCase },}` : '' })` ).test( value )
+    ) {
       errors.lowerCase = true;
     }
-    // eslint-disable-next-line max-len
-    if ( upperCase && !new RegExp( `(?=(.*[A-Z])${ typeof upperCase === 'number' && upperCase > 0 ? `{${ upperCase },}` : '' })` ).test( value ) ) {
+    if (
+      upperCase &&
+      !new RegExp(
+        `(?=(.*[A-Z])${ upperCase > 0 ? `{${ upperCase },}` : '' })`
+      ).test( value )
+    ) {
       errors.upperCase = true;
     }
-    // eslint-disable-next-line max-len
-    if ( number && !new RegExp( `(?=(.*[0-9])${ typeof number === 'number' && number > 0 ? `{${ number },}` : '' })` ).test( value ) ) {
+    if (
+      number &&
+      !new RegExp(
+        `(?=(.*[0-9])${ number > 0 ? `{${ number },}` : '' })`
+      ).test( value )
+    ) {
       errors.number = true;
     }
     if ( min != null && value.length < min ) {
@@ -120,9 +130,8 @@ export class AuthService extends HttpService {
     if ( max != null && value.length > max ) {
       errors.max = true;
     }
-    if ( customChars
-        &&
-        !customChars.split( '' ).some( ( char: string ) => value.indexOf( char ) > -1 )
+    if ( customChars &&
+      !customChars.split( '' ).some( ( char: string ) => value.indexOf( char ) > -1 )
     ) {
       errors.customChars = true;
     }

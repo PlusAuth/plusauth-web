@@ -1,0 +1,8 @@
+{
+  "out": "./docs",
+  "mode": "file",
+  "name": "PlusAuthWeb",
+  "readme": "none",
+  "module": "es2015",
+  "tsconfig": "./tsconfig.json"
+}

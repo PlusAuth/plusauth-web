@@ -2,30 +2,75 @@
   "name": "plusauth-web",
   "version": "1.0.0",
   "description": "PlusAuth Web Util",
-  "main": "lib/index.js",
-  "module": "dist/plusauth-js.js",
-  "author": "ismail.ayaz@ekinokssoftware.com",
+  "cdn": "dist/index.umd.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "jsdelivr": "dist/index.umd.js",
+  "umd:main": "dist/index.umd.js",
+  "author": {
+    "name": "Ismail H. Ayaz",
+    "email": "ismail.ayaz@ekinokssoftware.com"
+  },
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "webpack",
-    "test": "mocha"
+    "doc": "typedoc src/index.ts",
+    "build": "bili",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "mocha",
+    "prepublishOnly": "yarn doc && yarn build && yarn test"
   },
   "dependencies": {
-    "qs": "^6.9.1",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@microsoft/api-extractor": "^7.8.0",
+    "@release-it/conventional-changelog": "^1.1.4",
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "bili": "^4.10.0",
     "chai": "^4.2.0",
     "core-js": "^3.6.5",
     "eslint": "^7.0.0",
     "eslint-plugin-import": "^2.20.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
     "mocha": "^7.1.2",
     "nock": "^12.0.3",
-    "ts-node": "^8.8.2",
-    "typescript": "^3.8.3",
-    "webpack": "^4.43.0"
+    "release-it": "^13.6.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "ts-node": "^8.10.1",
+    "typedoc": "^0.17.6",
+    "typescript": "^3.9.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "header-max-length": [
+        0,
+        "always",
+        100
+      ],
+      "scope-case": [
+        0
+      ]
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }

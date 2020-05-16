@@ -9,6 +9,8 @@
   "module": "dist/index.esm.js",
   "jsdelivr": "dist/index.umd.js",
   "umd:main": "dist/index.umd.js",
+  "repository": "https://github.com/PlusAuth/plusauth-web",
+  "homepage": "https://github.com/PlusAuth/plusauth-web#readme",
   "author": {
     "name": "Ismail H. Ayaz",
     "email": "ismail.ayaz@ekinokssoftware.com"

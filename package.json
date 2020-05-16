@@ -1,6 +1,6 @@
 {
   "name": "plusauth-web",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "PlusAuth Web Util",
   "cdn": "dist/index.umd.js",
   "main": "dist/index.js",
@@ -22,7 +22,8 @@
     "build": "bili",
     "lint": "eslint . --ext .ts --fix",
     "test": "mocha",
-    "prepublishOnly": "yarn doc && yarn build && yarn test"
+    "prepublishOnly": "yarn doc && yarn build && yarn test",
+    "release": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN release-it"
   },
   "dependencies": {
     "whatwg-fetch": "^3.0.0"
@@ -40,6 +41,7 @@
     "bili": "^4.10.0",
     "chai": "^4.2.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
     "eslint": "^7.0.0",
     "eslint-plugin-import": "^2.20.2",
     "husky": "^4.2.5",

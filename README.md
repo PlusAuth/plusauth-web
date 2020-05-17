@@ -15,12 +15,12 @@ From PlusAuth CDN:
 
 With npm:
 ```shell script
-# npm install plusauth-web
+$ npm install plusauth-web
 ```
 
 or with yarn
 ```shell script
-# yarn add plusauth-web
+$ yarn add plusauth-web
 ```
 
 ## Initialization

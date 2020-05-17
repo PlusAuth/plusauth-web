@@ -2,7 +2,9 @@ import { Config } from 'bili'
 
 const config: Config = {
   banner: false,
-  input: 'src/index.ts',
+  input: {
+    'plusauth-web': 'src/index.ts'
+  },
   bundleNodeModules: true,
   babel: {
     minimal: true

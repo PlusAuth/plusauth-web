@@ -6,12 +6,12 @@
   },
   "newlineKind": "lf",
   "apiReport": {
-    "enabled": true,
+    "enabled": false,
     // "reportFileName": "<unscopedPackageName>.api.md",
-    "reportFolder": "<projectFolder>/docs/",
+    "reportFolder": "<projectFolder>/docs/"
   },
   "docModel": {
-    "enabled": true,
+    "enabled": true
     // "apiJsonFilePath": "<projectFolder>/temp/<unscopedPackageName>.api.json"
   },
   "dtsRollup": {
@@ -20,23 +20,24 @@
     publicTrimmedFilePath: "<projectFolder>/dist/index.d.ts"
   },
   "tsdocMetadata": {
+    enabled: false
   },
   "messages": {
     "compilerMessageReporting": {
       "default": {
-        "logLevel": "warning",
+        "logLevel": "warning"
         // "addToApiReportFile": false
-      },
+      }
     },
     "extractorMessageReporting": {
       "default": {
-        "logLevel": "warning",
+        "logLevel": "warning"
         // "addToApiReportFile": false
-      },
+      }
     },
     "tsdocMessageReporting": {
       "default": {
-        "logLevel": "warning",
+        "logLevel": "warning"
         // "addToApiReportFile": false
       }
     }

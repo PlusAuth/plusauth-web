@@ -2,13 +2,9 @@
   "name": "plusauth-web",
   "version": "0.0.1",
   "description": "PlusAuth Web Util",
-  "cdn": "dist/index.umd.js",
-  "main": "dist/index.js",
+  "main": "dist/plusauth-web.js",
   "types": "dist/index.d.ts",
-  "unpkg": "dist/index.umd.js",
-  "module": "dist/index.esm.js",
-  "jsdelivr": "dist/index.umd.js",
-  "umd:main": "dist/index.umd.js",
+  "module": "dist/plusauth-web.esm.js",
   "repository": "https://github.com/PlusAuth/plusauth-web",
   "homepage": "https://github.com/PlusAuth/plusauth-web#readme",
   "author": {
@@ -21,10 +17,10 @@
   ],
   "scripts": {
     "doc": "typedoc src/index.ts",
-    "build": "bili",
+    "build": "bili && api-extractor run",
     "lint": "eslint . --ext .ts --fix",
     "test": "mocha",
-    "prepublishOnly": "yarn doc && yarn build && yarn test",
+    "prepublishOnly": "yarn test && yarn doc && yarn build",
     "release": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN release-it"
   },
   "dependencies": {

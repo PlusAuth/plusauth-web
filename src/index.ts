@@ -1,6 +1,13 @@
+/**
+ * @packageDocumentation
+ * PlusAuth helper utility intended to use in client side environments.
+ */
+
 import { AuthService, MFAService } from './auth';
 
+export * from './auth'
 export * from './constants'
+export * from './http'
 
 /**
  * Main class for initializing the library.
@@ -11,16 +18,23 @@ export * from './constants'
  * const pa = new PlusAuthWeb("https://mytenant.plusauth.com")
  * ```
  *
- * @packageDefinition
+ *
+ * @public
  */
 export default class PlusAuthWeb {
-  auth: AuthService;
-
-  mfa: MFAService;
+  /**
+   * @readonly
+   */
+  readonly auth: AuthService;
 
   /**
-     * @param apiURL Your PlusAuthWeb tenant url. It must be a valid url.
-     */
+   * @readonly
+   */
+  readonly mfa: MFAService;
+
+  /**
+   * @param apiURL - Your PlusAuthWeb tenant url. It must be a valid url.
+   */
   constructor( apiURL: string ) {
     try {
       new URL( apiURL )

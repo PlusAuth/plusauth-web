@@ -3,6 +3,7 @@ import { HttpService } from '../http';
 
 /**
  * Class containing authorization related methods.
+ * @public
  */
 export class AuthService extends HttpService {
   constructor( baseURL: string ) {
@@ -12,8 +13,9 @@ export class AuthService extends HttpService {
   /**
    * Submits user credentials to the endpoint `/signin`.
    *
-   * @param fields Key/Value object for validating user.
-   * @param strategy PlusAuth strategy to check user. Make sure you have created this strategy in your tenant.
+   * @param fields - Key/Value object for validating user.
+   * @param strategy - PlusAuth strategy to check user. Make sure you have created this strategy
+   * in your tenant.
    *
    * @example
    * Here is a simple usage.
@@ -34,8 +36,8 @@ export class AuthService extends HttpService {
   /**
    * Posts a request for registering a user.
    *
-   * @param fields Key/Value object containing user information.
-   * @param strategy PlusAuth strategy to create the user for. Make sure you have created this
+   * @param fields - Key/Value object containing user information.
+   * @param strategy - PlusAuth strategy to create the user for. Make sure you have created this
    * strategy in your tenant.
    *
    * @example
@@ -54,6 +56,7 @@ export class AuthService extends HttpService {
    * With different strategy.
    * ```js
    *  auth.signUp( { username: "johndoe@example.com", password: "mypassword" }, "myLdapStrategy" )
+   * ```
    */
   public signUp( fields: { [key: string]: any }, strategy?: string ): Promise<any> {
     return this.http.post( '/signup', { ...fields, strategy } );

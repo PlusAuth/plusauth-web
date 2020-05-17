@@ -1,3 +1,7 @@
+/**
+ *
+ * @public
+ */
 export enum VerificationTokenType {
   EMAIL = 'email',
   FORGOT_PASSWORD = 'forgot_password',

@@ -28,6 +28,9 @@ function fetchAsPromise( url: string, options: RequestInit ) {
   } )
 }
 
+/**
+ * @public
+ */
 export class HttpService {
   http: any
 

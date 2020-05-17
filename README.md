@@ -1,4 +1,4 @@
-#plusauth-web
+# plusauth-web
 PlusAuth helper utility intended to use in client side environments.
 
 ## Table of Contents

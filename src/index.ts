@@ -33,7 +33,7 @@ export default class PlusAuthWeb {
   readonly mfa: MFAService;
 
   /**
-   * @param apiURL - Your PlusAuthWeb tenant url. It must be a valid url.
+   * @param apiURL - Your PlusAuth tenant url. It must be a valid url.
    */
   constructor( apiURL: string ) {
     try {

@@ -3,7 +3,7 @@ PlusAuth helper utility intended to use in client side environments.
 
 ## Table of Contents
 1. [Installation](#installation)
-2. [Initialization](#initialization)
+2. [Usage](#usage)
 
 
 ## Installation
@@ -23,7 +23,9 @@ or with yarn
 $ yarn add plusauth-web
 ```
 
-## Initialization
+# Usage
+
+## CDN Usage
 After installing the library it will be exposed to global as `PlusAuthWeb`
 
 Initialize it like following:

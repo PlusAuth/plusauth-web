@@ -62,7 +62,7 @@ export class AuthService extends HttpService {
     return this.http.post( '/signup', { ...fields, strategy } );
   }
 
-  public updateMissingInformation( fields: { [key: string]: any } ) {
+  public updateMissingInformation( fields: { [key: string]: any } ): Promise<any> {
     return this.http.post( '/updateMissingInformation', fields );
   }
 
@@ -78,26 +78,26 @@ export class AuthService extends HttpService {
     } );
   }
 
-  public verifyCode( code: string, type?: VerificationTokenType, token?: string ) {
+  public verifyCode( code: string, type?: VerificationTokenType, token?: string ): Promise<any> {
     return this.http.post( `verify/${ token }`, {
       type,
       code,
     } );
   }
 
-  public acceptConsent() {
+  public acceptConsent(): Promise<any> {
     return this.http.post( '/signin/consent/confirm' );
   }
 
-  public rejectConsent() {
+  public rejectConsent(): Promise<any> {
     return this.http.get( '/signin/consent/reject' );
   }
 
-  public async checkPasswordStrength( value: string, passwordRules: any ) {
+  public checkPasswordStrength( value: string, passwordRules: any ): any {
     if ( !value ) {
       return passwordRules ? { min: true } : { score: 0 };
     }
-    return true;
+
     const errors: any = {};
     // eslint-disable-next-line prefer-const
     let { min, max, number, lowerCase, upperCase, customChars, customRegexp } = passwordRules;

@@ -8,7 +8,7 @@ export class MFAService extends HttpService {
     super( baseURL );
   }
 
-  public async validateCode( code: string, method: string ) {
+  public async validateCode( code: string, method: string ): Promise<any> {
     return this.http.post( `/signin/challenge/${ method }`, {
       code
     } );

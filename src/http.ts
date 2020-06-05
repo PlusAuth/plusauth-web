@@ -47,7 +47,7 @@ export class HttpService {
       http[method] = function ( ...args: any[] ) {
         const fetchOptions: RequestInit = {
           method,
-          credentials: 'include' as 'include',
+          credentials: 'include',
           mode:        'cors',
           headers:     {
             'Content-Type':     'application/json',

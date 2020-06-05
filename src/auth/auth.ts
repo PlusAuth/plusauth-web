@@ -94,10 +94,7 @@ export class AuthService extends HttpService {
   }
 
   public checkPasswordStrength( value: string, passwordRules: any ): any {
-    if ( !value ) {
-      return passwordRules ? { min: true } : { score: 0 };
-    }
-
+    value = value ?? '';
     const errors: any = {};
     // eslint-disable-next-line prefer-const
     let { min, max, number, lowerCase, upperCase, customChars, customRegexp } = passwordRules;

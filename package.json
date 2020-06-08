@@ -16,11 +16,11 @@
     "dist"
   ],
   "scripts": {
-    "doc": "typedoc src/index.ts",
+    "docs": "typedoc src/index.ts",
     "build": "bili && api-extractor run",
     "lint": "eslint . --ext .ts --fix",
     "test": "mocha",
-    "prepublishOnly": "yarn test && yarn doc && yarn build",
+    "prepublishOnly": "yarn test && yarn build",
     "release": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN release-it"
   },
   "dependencies": {
@@ -40,8 +40,8 @@
     "chai": "^4.2.0",
     "core-js": "^3.6.5",
     "cross-env": "^7.0.2",
-    "eslint": "^7.1.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.21.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
     "mocha": "^7.2.0",

@@ -1,3 +1,6 @@
+/**
+ * @internal
+ */
 function fetchAsPromise( url: string, options: RequestInit ) {
   return new Promise( function ( resolve, reject ){
     fetch( url, options ).then( rawResponse => {
@@ -29,19 +32,18 @@ function fetchAsPromise( url: string, options: RequestInit ) {
 }
 
 /**
+ * Helper service for posting requests. It is intended to be used internally.
  * @public
  */
 export class HttpService {
+  /**
+   * @internal
+   */
   http: any
-
-  static prefix = '';
-
-  private _baseUrl: string;
 
   ['constructor']!: typeof HttpService
 
   constructor( apiURL: string ) {
-    const _baseUrl = apiURL + this.constructor.prefix;
     const http: any = {};
     ['get', 'post', 'patch', 'delete'].forEach( method => {
       http[method] = function ( ...args: any[] ) {
@@ -57,13 +59,12 @@ export class HttpService {
         }
         method !== 'get' ? fetchOptions.body = JSON.stringify( args[1] ) : null
         if ( typeof args[0] !== 'string' ){
-          return fetchAsPromise.call( null, _baseUrl, fetchOptions )
+          return fetchAsPromise.call( null, apiURL, fetchOptions )
         } else {
-          return fetchAsPromise.call( null, _baseUrl + args[0], fetchOptions )
+          return fetchAsPromise.call( null, apiURL + args[0], fetchOptions )
         }
       }
     } )
-    this._baseUrl = _baseUrl
     this.http = http
   }
 }

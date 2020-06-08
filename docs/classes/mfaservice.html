@@ -68,6 +68,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Class containing Multi Factor Authorization related methods.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -88,19 +91,6 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-external">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-external"><a href="mfaservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-inherited tsd-is-external">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="mfaservice.html#http" class="tsd-kind-icon">http</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external"><a href="mfaservice.html#prefix" class="tsd-kind-icon">prefix</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-external">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="mfaservice.html#validatecode" class="tsd-kind-icon">validate<wbr>Code</a></li>
@@ -110,79 +100,58 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-external">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">new MFAService<span class="tsd-signature-symbol">(</span>baseURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="mfaservice.html" class="tsd-signature-type">MFAService</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides <a href="httpservice.html">HttpService</a>.<a href="httpservice.html#constructor">constructor</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/cc1a1b1/src/auth/mfa.ts#L6">auth/mfa.ts:6</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>baseURL: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="mfaservice.html" class="tsd-signature-type">MFAService</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-external">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-					<a name="http" class="tsd-anchor"></a>
-					<h3>http</h3>
-					<div class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="httpservice.html">HttpService</a>.<a href="httpservice.html#http">http</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/cc1a1b1/src/http.ts#L35">http.ts:35</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external">
-					<a name="prefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="httpservice.html">HttpService</a>.<a href="httpservice.html#prefix">prefix</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/cc1a1b1/src/http.ts#L37">http.ts:37</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
 					<a name="validatecode" class="tsd-anchor"></a>
 					<h3>validate<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">validate<wbr>Code<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">validate<wbr>Code<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, codeType<span class="tsd-signature-symbol">: </span><a href="../enums/mfacodetype.html" class="tsd-signature-type">MFACodeType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/cc1a1b1/src/auth/mfa.ts#L11">auth/mfa.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/6c60031/src/auth/mfa.ts#L46">auth/mfa.ts:46</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Submit user provided code for validation.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>Validate SMS code.</p>
+										<pre><code class="language-js">mfa.validateCode(<span class="hljs-string">'123456'</span>, <span class="hljs-string">'sms'</span>).catch( <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'Code is not valid'</span>, err)
+})</code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Validate Email code.</p>
+										<pre><code class="language-js">mfa.validateCode(<span class="hljs-string">'123456'</span>, <span class="hljs-string">'email'</span>).catch( <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'Code is not valid'</span>, err)
+})</code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p>Validate OTP code.</p>
+										<pre><code class="language-js">mfa.validateCode(<span class="hljs-string">'123456'</span>, <span class="hljs-string">'ga'</span>).catch( <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">'Code is not valid'</span>, err)
+})</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>code: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>User provided code</p>
+									</div>
 								</li>
 								<li>
-									<h5>method: <span class="tsd-signature-type">string</span></h5>
+									<h5>codeType: <a href="../enums/mfacodetype.html" class="tsd-signature-type">MFACodeType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Method of MFA</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -202,7 +171,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-is-external">
-						<a href="../enums/verificationtokentype.html" class="tsd-kind-icon">Verification<wbr>Token<wbr>Type</a>
+						<a href="../enums/mfacodetype.html" class="tsd-kind-icon">MFACode<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class tsd-is-external">
 						<a href="authservice.html" class="tsd-kind-icon">Auth<wbr>Service</a>
@@ -215,15 +184,6 @@
 					<li class="current tsd-kind-class tsd-is-external">
 						<a href="mfaservice.html" class="tsd-kind-icon">MFAService</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-external">
-								<a href="mfaservice.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
-								<a href="mfaservice.html#http" class="tsd-kind-icon">http</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external">
-								<a href="mfaservice.html#prefix" class="tsd-kind-icon">prefix</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="mfaservice.html#validatecode" class="tsd-kind-icon">validate<wbr>Code</a>
 							</li>
@@ -233,9 +193,6 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="plusauthweb.html" class="tsd-kind-icon">Plus<wbr>Auth<wbr>Web</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../index.html#fetchaspromise" class="tsd-kind-icon">fetch<wbr>AsPromise</a>
 					</li>
 				</ul>
 			</nav>

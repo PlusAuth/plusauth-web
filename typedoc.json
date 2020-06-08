@@ -4,5 +4,6 @@
   "name": "PlusAuthWeb",
   "readme": "none",
   "module": "es2015",
-  "tsconfig": "./tsconfig.json"
+  "tsconfig": "./tsconfig.json",
+  "stripInternal": true
 }

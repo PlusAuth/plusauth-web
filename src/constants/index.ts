@@ -1,1 +1,1 @@
-export * from './verification_token_type';
+export * from './mfa_code_type';

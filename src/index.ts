@@ -18,7 +18,7 @@ export * from './http'
  * // access auth methods from `auth` property
  * pa.auth.signIn({ username: ..., password: ...})
  *
- * // access MFA methogs from `mfa` property
+ * // access MFA methods from `mfa` property
  * pa.mfa.validateCode('code', 'sms')
  * ```
  *

@@ -1,9 +1,11 @@
 {
   "out": "./docs",
-  "mode": "file",
   "name": "PlusAuthWeb",
   "readme": "none",
-  "module": "es2015",
+  "mode": "file",
   "tsconfig": "./tsconfig.json",
-  "stripInternal": true
+  "theme": "./docs-source/theme",
+  "hideGenerator": true,
+  "stripInternal": true,
+  "listInvalidSymbolLinks": false
 }

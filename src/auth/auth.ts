@@ -174,7 +174,7 @@ export class AuthService extends HttpService {
    * }
    * ```
    */
-  public checkPasswordStrength( value: string, passwordRules: any ): any {
+  public checkPasswordStrength( value: string, passwordRules: any = {} ): any {
     value = value ?? '';
     const errors: any = {};
     // eslint-disable-next-line prefer-const

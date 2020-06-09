@@ -1,3 +1,11 @@
+## [0.0.2-alpha.6](https://github.com/PlusAuth/plusauth-web/compare/v0.0.2-alpha.5...v0.0.2-alpha.6) (2020-06-09)
+
+
+### Features
+
+* allow slash as apiUrl for using base domain ([d1796c8](https://github.com/PlusAuth/plusauth-web/commit/d1796c8048676d06844313f4faae5981fcad88e2))
+* default password rules to empty object ([bb61efc](https://github.com/PlusAuth/plusauth-web/commit/bb61efcae2afcf05a3065bc80be78124f727848a))
+
 ## [0.0.2-alpha.5](https://github.com/PlusAuth/plusauth-web/compare/v0.0.2-alpha.4...v0.0.2-alpha.5) (2020-06-09)
 
 ## [0.0.2-alpha.4](https://github.com/PlusAuth/plusauth-web/compare/v0.0.2-alpha.3...v0.0.2-alpha.4) (2020-06-09)

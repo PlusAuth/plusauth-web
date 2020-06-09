@@ -44,7 +44,7 @@ export default class PlusAuthWeb {
    */
   constructor( apiURL: string ) {
     try {
-      new URL( apiURL )
+      apiURL === '/' || new URL( apiURL )
     } catch ( e ) {
       throw new Error( '"apiURL" must be a valid URL' )
     }

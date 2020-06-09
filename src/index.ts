@@ -1,12 +1,10 @@
 /**
  * @packageDocumentation
- * PlusAuth helper utility intended to use in client side environments.
  */
 
-import { AuthService, MFAService } from './auth';
+import { AuthService } from './auth/auth';
+import { MFAService } from './auth/mfa';
 
-export * from './auth'
-export * from './constants'
 export * from './http'
 
 /**
@@ -16,18 +14,25 @@ export * from './http'
  *
  * ```js
  * const pa = new PlusAuthWeb("https://mytenant.plusauth.com")
- * ```
  *
+ * // access auth methods from `auth` property
+ * pa.auth.signIn({ username: ..., password: ...})
+ *
+ * // access MFA methogs from `mfa` property
+ * pa.mfa.validateCode('code', 'sms')
+ * ```
  *
  * @public
  */
 export default class PlusAuthWeb {
   /**
+   * See {@link AuthService }
    * @readonly
    */
   readonly auth: AuthService;
 
   /**
+   * See {@link MFAService }
    * @readonly
    */
   readonly mfa: MFAService;

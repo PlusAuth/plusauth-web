@@ -1,4 +1,9 @@
 /**
+ * @packageDocumentation
+ * @module Constants
+ */
+
+/**
  * Code types to be used in Multi-Factor Authentication
  *
  * @public

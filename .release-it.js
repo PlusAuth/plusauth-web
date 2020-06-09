@@ -8,7 +8,8 @@ module.exports = {
   "github": {
     "release": true,
     "draft": true,
-    "releaseName": "v${version}"
+    "releaseName": "v${version}",
+    "releaseNotes": "echo \"${changelog}\" | sed 1,2d"
   },
   "plugins": {
     "@release-it/conventional-changelog": {

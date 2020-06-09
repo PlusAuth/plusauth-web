@@ -34,7 +34,6 @@ function fetchAsPromise( url: string, options: RequestInit ) {
 /**
  * Helper service for posting requests. It is intended to be used internally.
  * @public
- * @internal
  */
 export class HttpService {
   /**

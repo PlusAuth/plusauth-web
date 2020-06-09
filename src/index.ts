@@ -6,6 +6,8 @@ import { AuthService } from './auth/auth';
 import { MFAService } from './auth/mfa';
 
 export * from './http'
+export * from './auth'
+export * from './constants'
 
 /**
  * Main class for initializing the library.

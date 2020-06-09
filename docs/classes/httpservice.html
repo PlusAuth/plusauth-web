@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MFACodeType | PlusAuthWeb</title>
+	<title>HttpService | PlusAuthWeb</title>
 	<meta name="description" content="Documentation for PlusAuthWeb">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon"
@@ -59,10 +59,10 @@
 					<a href="../index.html">Home</a>
 				</li>
 				<li>
-					<a href="mfacodetype.html">MFACodeType</a>
+					<a href="httpservice.html">HttpService</a>
 				</li>
 			</ul>
-			<h1>Enumeration MFACodeType</h1>
+			<h1>Class HttpService</h1>
 		</div>
 	</div>
 </header>
@@ -72,56 +72,63 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Code types to be used in Multi-Factor Authentication</p>
+						<p>Helper service for posting requests. It is intended to be used internally.</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">HttpService</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="authservice.html" class="tsd-signature-type">AuthService</a>
+							</li>
+							<li>
+								<a href="mfaservice.html" class="tsd-signature-type">MFAService</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-external">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="mfacodetype.html#email" class="tsd-kind-icon">EMAIL</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="mfacodetype.html#ga" class="tsd-kind-icon">GA</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="mfacodetype.html#sms" class="tsd-kind-icon">SMS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="httpservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-					<a name="email" class="tsd-anchor"></a>
-					<h3>EMAIL</h3>
-					<div class="tsd-signature tsd-kind-icon">EMAIL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;email&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b4d518e/src/constants/mfa_code_type.ts#L13">constants/mfa_code_type.ts:13</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-					<a name="ga" class="tsd-anchor"></a>
-					<h3>GA</h3>
-					<div class="tsd-signature tsd-kind-icon">GA<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;ga&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b4d518e/src/constants/mfa_code_type.ts#L14">constants/mfa_code_type.ts:14</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-					<a name="sms" class="tsd-anchor"></a>
-					<h3>SMS</h3>
-					<div class="tsd-signature tsd-kind-icon">SMS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;sms&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b4d518e/src/constants/mfa_code_type.ts#L12">constants/mfa_code_type.ts:12</a></li>
-						</ul>
-					</aside>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-property tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Http<wbr>Service<span class="tsd-signature-symbol">(</span>apiURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="httpservice.html" class="tsd-signature-type">HttpService</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b4d518e/src/http.ts#L44">http.ts:44</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>apiURL: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="httpservice.html" class="tsd-signature-type">HttpService</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -135,35 +142,29 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-is-external">
+						<a href="../enums/mfacodetype.html" class="tsd-kind-icon">MFACode<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-external">
+						<a href="authservice.html" class="tsd-kind-icon">Auth<wbr>Service</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-is-external">
-						<a href="mfacodetype.html" class="tsd-kind-icon">MFACode<wbr>Type</a>
+					<li class="current tsd-kind-class tsd-is-external">
+						<a href="httpservice.html" class="tsd-kind-icon">Http<wbr>Service</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-								<a href="mfacodetype.html#email" class="tsd-kind-icon">EMAIL</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-								<a href="mfacodetype.html#ga" class="tsd-kind-icon">GA</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-								<a href="mfacodetype.html#sms" class="tsd-kind-icon">SMS</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="httpservice.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/authservice.html" class="tsd-kind-icon">Auth<wbr>Service</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/httpservice.html" class="tsd-kind-icon">Http<wbr>Service</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/mfaservice.html" class="tsd-kind-icon">MFAService</a>
+						<a href="mfaservice.html" class="tsd-kind-icon">MFAService</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/plusauthweb.html" class="tsd-kind-icon">Plus<wbr>Auth<wbr>Web</a>
+						<a href="plusauthweb.html" class="tsd-kind-icon">Plus<wbr>Auth<wbr>Web</a>
 					</li>
 				</ul>
 			</nav>

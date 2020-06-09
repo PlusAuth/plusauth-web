@@ -3,8 +3,8 @@ PlusAuth helper utility intended to use in browsers.
 
 ## Table of Contents
 1. [Installation](#installation)
-2. [Docs](#docs)
-3. [Usage](#usage)
+2. [Usage](#usage)
+3. [Docs](#docs)
 
 
 ## Installation
@@ -42,5 +42,5 @@ const plusAuth = new PlusAuthWeb('https://<YOUR_TENANT_ID>.plusauth.com')
 ```
 
 # Docs
-For api docs visit [here](https://plusauth.github.io/plusauth-web/classes/plusauthweb.html)
+For API docs visit [here](https://plusauth.github.io/plusauth-web/classes/plusauthweb.html)
 

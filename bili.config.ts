@@ -11,7 +11,7 @@ const config: Config = {
   },
   output: {
     format: ['es', 'cjs', 'umd', 'umd-min'],
-    moduleName: 'PlusAuthWeb',
+    moduleName: 'plusauthweb',
     sourceMap: true
   },
   plugins: {

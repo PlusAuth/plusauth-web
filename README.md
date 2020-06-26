@@ -11,7 +11,7 @@ PlusAuth helper utility intended to use in browsers.
 From PlusAuth CDN:
 ```html
 <!-- Latest release -->
-<script src="https://unpkg.com/plusauth-web@0.0.2-alpha.6/dist/plusauth-web.umd.min.js"></script>
+<script src="https://unpkg.com/plusauth-web@0.0.2-alpha.7/dist/plusauth-web.umd.min.js"></script>
 ```
 
 With npm:
@@ -27,18 +27,31 @@ $ yarn add plusauth-web
 # Usage
 
 ## CDN Usage
-The library will be exposed to global as `PlusAuthWeb`
+The library will be exposed to global as `plusauthweb`
 
 Initialize it like following:
 ```js
-const plusAuth = new PlusAuthWeb('https://<YOUR_TENANT_ID>.plusauth.com')
+const plusAuth = new plusauthweb.PlusAuthWeb('https://<YOUR_TENANT_ID>.plusauth.com')
+
+
+// access auth methods
+plusAuth.auth.signIn({ username: 'test', password: 'test' })
+
+// access mfa methods
+plusAuth.mfa.validateCode('CODE', plusauthweb.MFACodeType.SMS)
 ```
 
 ## NPM Usage
 ```js
-import PlusAuthWeb from 'plusauth-web'
+import { PlusAuthWeb, MFACodeType } from 'plusauth-web'
 
 const plusAuth = new PlusAuthWeb('https://<YOUR_TENANT_ID>.plusauth.com')
+
+// access auth methods
+plusAuth.auth.signIn({ username: 'test', password: 'test' })
+
+// access mfa methods
+plusAuth.mfa.validateCode('CODE', MFACodeType.SMS)
 ```
 
 # Docs

@@ -2,8 +2,7 @@
  * @packageDocumentation
  */
 
-import { AuthService } from './auth/auth';
-import { MFAService } from './auth/mfa';
+import { AuthService, MFAService } from './auth';
 
 export * from './http'
 export * from './auth'
@@ -26,7 +25,7 @@ export * from './constants'
  *
  * @public
  */
-export default class PlusAuthWeb {
+export class PlusAuthWeb {
   /**
    * See {@link AuthService }
    * @readonly

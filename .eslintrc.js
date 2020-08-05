@@ -92,7 +92,7 @@ module.exports = {
         "objectsInObjects": true
       }
     ],
-    "padded-blocks": ["error", "never", { "classes": "always" }],
+    "padded-blocks": ["error", "never"],
     "prefer-template": "error",
     "quotes": [
       "error",

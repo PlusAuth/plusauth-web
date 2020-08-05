@@ -1,6 +1,6 @@
 {
-  "name": "plusauth-web",
-  "version": "0.0.2-alpha.7",
+  "name": "@plusauth/web",
+  "version": "0.0.4",
   "description": "PlusAuth Web Util",
   "main": "dist/plusauth-web.js",
   "types": "dist/plusauth-web.d.ts",
@@ -74,6 +74,7 @@
     }
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   }
 }

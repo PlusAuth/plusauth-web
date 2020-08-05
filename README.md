@@ -11,17 +11,17 @@ PlusAuth helper utility intended to use in browsers.
 From PlusAuth CDN:
 ```html
 <!-- Latest release -->
-<script src="https://unpkg.com/plusauth-web@0.0.2-alpha.7/dist/plusauth-web.umd.min.js"></script>
+<script src="https://unpkg.com/@plusauth/web@0.0.4/dist/plusauth-web.umd.min.js"></script>
 ```
 
 With npm:
 ```shell script
-$ npm install plusauth-web
+$ npm install @plusauth/web
 ```
 
 or with yarn
 ```shell script
-$ yarn add plusauth-web
+$ yarn add @plusauth/web
 ```
 
 # Usage
@@ -33,7 +33,6 @@ Initialize it like following:
 ```js
 const plusAuth = new plusauthweb.PlusAuthWeb('https://<YOUR_TENANT_ID>.plusauth.com')
 
-
 // access auth methods
 plusAuth.auth.signIn({ username: 'test', password: 'test' })
 
@@ -43,7 +42,7 @@ plusAuth.mfa.validateCode('CODE', plusauthweb.MFACodeType.SMS)
 
 ## NPM Usage
 ```js
-import { PlusAuthWeb, MFACodeType } from 'plusauth-web'
+import { PlusAuthWeb, MFACodeType } from '@plusauth/web'
 
 const plusAuth = new PlusAuthWeb('https://<YOUR_TENANT_ID>.plusauth.com')
 

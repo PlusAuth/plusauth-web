@@ -1,5 +1,5 @@
 {
-  "name": "@plusauth/web",
+  "name": "@plusauth/plusauth-web",
   "version": "0.0.4",
   "description": "PlusAuth Web Util",
   "main": "dist/plusauth-web.js",

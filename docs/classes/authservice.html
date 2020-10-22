@@ -121,7 +121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L136">auth/auth.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L136">auth/auth.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -151,7 +151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L177">auth/auth.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L177">auth/auth.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L152">auth/auth.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L152">auth/auth.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -233,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L94">auth/auth.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L94">auth/auth.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -270,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L118">auth/auth.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L118">auth/auth.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -281,10 +281,10 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span class="hljs-keyword">const</span> searchQuery = <span class="hljs-built_in">window</span>.location.search
-<span class="hljs-keyword">const</span> params = <span class="hljs-keyword">new</span> URLSearchParams(searchQuery);
+									<dd><pre><code class="language-js"><span class="hljs-keyword">const</span> pathParts = location.pathname.split(<span class="hljs-string">'/'</span>)
+<span class="hljs-keyword">const</span> token = pathParts[pathParts.length - <span class="hljs-number">1</span>];
 
-auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, params.get(<span class="hljs-string">'token'</span>)).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Password reset successfully'</span>)
 })</code></pre>
 									</dd>
@@ -319,7 +319,7 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, params.get(<
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L34">auth/auth.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L34">auth/auth.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +372,7 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, params.get(<
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L63">auth/auth.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L63">auth/auth.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -427,7 +427,7 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, params.get(<
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/65e7fac/src/auth/auth.ts#L79">auth/auth.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L79">auth/auth.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

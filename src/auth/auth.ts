@@ -107,10 +107,10 @@ export class AuthService extends HttpService {
    *
    * @example
    * ```js
-   * const searchQuery = window.location.search
-   * const params = new URLSearchParams(searchQuery);
+   * const pathParts = location.pathname.split('/')
+   * const token = pathParts[pathParts.length - 1];
    *
-   * auth.resetPassword('NEW_PASSWORD', params.get('token')).then(function(){
+   * auth.resetPassword('NEW_PASSWORD', token).then(function(){
    *   console.log('Password reset successfully')
    * })
    * ```

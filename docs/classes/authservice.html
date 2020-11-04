@@ -121,7 +121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L136">auth/auth.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L136">auth/auth.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -151,7 +151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L177">auth/auth.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L177">auth/auth.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -161,15 +161,15 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span class="hljs-keyword">const</span> password = <span class="hljs-string">'123'</span>
+									<dd><pre><code class="language-js"><span class="hljs-keyword">const</span> password = <span class="hljs-string">&#x27;123&#x27;</span>
 <span class="hljs-keyword">const</span> passwordRules = <span class="hljs-built_in">window</span>.PlusAuth.passwordPolicy
 
 <span class="hljs-keyword">const</span> passwordStrength = auth.checkPasswordStrength(password, passwordRules)
 
-<span class="hljs-keyword">if</span>( passwordStrength === <span class="hljs-literal">true</span> ){
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'password is strong enough'</span>)
+<span class="hljs-function"><span class="hljs-title">if</span>(<span class="hljs-params"> passwordStrength === <span class="hljs-literal">true</span> </span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;password is strong enough&#x27;</span>)
 } <span class="hljs-keyword">else</span> {
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Password is not strong enough'</span>, passwordStrength)
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;Password is not strong enough&#x27;</span>, passwordStrength)
 }</code></pre>
 									</dd>
 								</dl>
@@ -203,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L152">auth/auth.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L152">auth/auth.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -233,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L94">auth/auth.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L94">auth/auth.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,7 +243,7 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js">auth.requestResetPassword(<span class="hljs-string">'john@doe.com'</span>)</code></pre>
+									<dd><pre><code class="language-js">auth.requestResetPassword(<span class="hljs-string">&#x27;john@doe.com&#x27;</span>)</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -270,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L118">auth/auth.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L118">auth/auth.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -281,11 +281,11 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span class="hljs-keyword">const</span> pathParts = location.pathname.split(<span class="hljs-string">'/'</span>)
+									<dd><pre><code class="language-js"><span class="hljs-keyword">const</span> pathParts = location.pathname.split(<span class="hljs-string">&#x27;/&#x27;</span>)
 <span class="hljs-keyword">const</span> token = pathParts[pathParts.length - <span class="hljs-number">1</span>];
 
-auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Password reset successfully'</span>)
+auth.resetPassword(<span class="hljs-string">&#x27;NEW_PASSWORD&#x27;</span>, token).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;Password reset successfully&#x27;</span>)
 })</code></pre>
 									</dd>
 								</dl>
@@ -319,7 +319,7 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L34">auth/auth.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L34">auth/auth.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -329,11 +329,11 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p>Here is a simple usage.</p>
-										<pre><code class="language-js"> auth.signIn( { <span class="hljs-attr">username</span>: <span class="hljs-string">"johndoe@example.com"</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">"mypassword"</span> } )</code></pre>
+										<pre><code class="language-js"> auth.signIn( { <span class="hljs-attr">username</span>: <span class="hljs-string">&quot;johndoe@example.com&quot;</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">&quot;mypassword&quot;</span> } )</code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p>With different strategy.</p>
-										<pre><code class="language-js"> auth.signIn( { <span class="hljs-attr">username</span>: <span class="hljs-string">"johndoe@example.com"</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">"mypassword"</span> }, <span class="hljs-string">"myLdapStrategy"</span> )</code></pre>
+										<pre><code class="language-js"> auth.signIn( { <span class="hljs-attr">username</span>: <span class="hljs-string">&quot;johndoe@example.com&quot;</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">&quot;mypassword&quot;</span> }, <span class="hljs-string">&quot;myLdapStrategy&quot;</span> )</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -372,7 +372,7 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L63">auth/auth.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L63">auth/auth.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -382,13 +382,15 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p>Here is a simple usage.</p>
-									<pre><code> <span class="hljs-selector-tag">auth</span><span class="hljs-selector-class">.signUp</span>( { <span class="hljs-attribute">username</span>: <span class="hljs-string">"johndoe@example.com"</span>, password: <span class="hljs-string">"mypassword"</span> } )</code></pre></dd>
+										<pre><code> <span class="hljs-selector-tag">auth</span><span class="hljs-selector-class">.signUp</span>( { <span class="hljs-attribute">username</span>: <span class="hljs-string">&quot;johndoe@example.com&quot;</span>, password: <span class="hljs-string">&quot;mypassword&quot;</span> } )</code></pre>
+									</dd>
 									<dt>example</dt>
 									<dd><p>With phone number.</p>
-									<pre><code> <span class="hljs-selector-tag">auth</span><span class="hljs-selector-class">.signUp</span>( { <span class="hljs-attribute">username</span>: <span class="hljs-string">"johndoe@example.com"</span>, password: <span class="hljs-string">"mypassword"</span>, phone_number: <span class="hljs-string">'+11231212123'</span> } )</code></pre></dd>
+										<pre><code> <span class="hljs-selector-tag">auth</span><span class="hljs-selector-class">.signUp</span>( { <span class="hljs-attribute">username</span>: <span class="hljs-string">&quot;johndoe@example.com&quot;</span>, password: <span class="hljs-string">&quot;mypassword&quot;</span>, phone_number: <span class="hljs-string">&#x27;+11231212123&#x27;</span> } )</code></pre>
+									</dd>
 									<dt>example</dt>
 									<dd><p>With different strategy.</p>
-										<pre><code class="language-js"> auth.signUp( { <span class="hljs-attr">username</span>: <span class="hljs-string">"johndoe@example.com"</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">"mypassword"</span> }, <span class="hljs-string">"myLdapStrategy"</span> )</code></pre>
+										<pre><code class="language-js"> auth.signUp( { <span class="hljs-attr">username</span>: <span class="hljs-string">&quot;johndoe@example.com&quot;</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">&quot;mypassword&quot;</span> }, <span class="hljs-string">&quot;myLdapStrategy&quot;</span> )</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -427,7 +429,7 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/c655ba4/src/auth/auth.ts#L79">auth/auth.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/PlusAuth/plusauth-web/blob/b56ac23/src/auth/auth.ts#L79">auth/auth.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -438,7 +440,7 @@ auth.resetPassword(<span class="hljs-string">'NEW_PASSWORD'</span>, token).then(
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js">auth.updateMissingInformation({ <span class="hljs-attr">phone_number</span>: <span class="hljs-string">'+1222334455'</span>})</code></pre>
+									<dd><pre><code class="language-js">auth.updateMissingInformation({ <span class="hljs-attr">phone_number</span>: <span class="hljs-string">&#x27;+1222334455&#x27;</span>})</code></pre>
 									</dd>
 								</dl>
 							</div>

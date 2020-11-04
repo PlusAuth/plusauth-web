@@ -1,3 +1,10 @@
+# [0.1.0](https://github.com/PlusAuth/plusauth-web/compare/v0.0.2-alpha.7...v0.1.0) (2020-11-04)
+
+
+### Reverts
+
+* wrong package name in [#151786](https://github.com/PlusAuth/plusauth-web/issues/151786)a3 ([363b3c4](https://github.com/PlusAuth/plusauth-web/commit/363b3c420b2b8690b5213ae38921da8106a4ef48)), closes [#151786a3](https://github.com/PlusAuth/plusauth-web/issues/151786a3)
+
 ## [0.0.4](https://github.com/PlusAuth/plusauth-web/compare/v0.0.2-alpha.7...v0.0.4) (2020-07-09)
 
 ## [0.0.3](https://github.com/PlusAuth/plusauth-web/compare/v0.0.2-alpha.7...v0.0.3) (2020-07-09)

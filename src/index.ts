@@ -27,13 +27,11 @@ export * from './constants'
  */
 export class PlusAuthWeb {
   /**
-   * See {@link AuthService }
    * @readonly
    */
   readonly auth: AuthService;
 
   /**
-   * See {@link MFAService }
    * @readonly
    */
   readonly mfa: MFAService;

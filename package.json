@@ -73,6 +73,9 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "lint-staged": {
+    "*.ts": "yarn lint"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

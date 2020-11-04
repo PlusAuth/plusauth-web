@@ -38,7 +38,7 @@ export class MFAService extends HttpService {
    * @example
    * Validate OTP code.
    * ```js
-   * mfa.validateCode('123456', 'ga').catch( function(err){
+   * mfa.validateCode('123456', 'otp').catch( function(err){
    *   console.error('Code is not valid', err)
    * })
    * ```

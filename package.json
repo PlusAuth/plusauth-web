@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "docs": "typedoc src/index.ts",
-    "build": "bili && api-extractor run",
+    "build": "rimraf dist && bili && api-extractor run",
     "lint": "eslint . --ext .ts --fix",
     "test": "mocha",
     "prepublishOnly": "yarn test && yarn build",
@@ -47,6 +47,7 @@
     "mocha": "^8.2.1",
     "nock": "^13.0.4",
     "release-it": "^14.2.1",
+    "rimraf": "^3.0.2",
     "rollup-plugin-typescript2": "^0.29.0",
     "ts-node": "^9.0.0",
     "typedoc": "^0.19.2",

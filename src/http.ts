@@ -9,9 +9,9 @@ function fetchAsPromise( url: string, options: RequestInit ) {
       let response = null
       rawResponse.text().then( value => {
         if ( contentType && contentType.indexOf( 'application/json' ) > -1 ){
-          response = JSON.parse( value )
+          response = Object.assign( JSON.parse( value ), { _raw: rawResponse } )
         } else {
-          response = value
+          response = { data: value, _raw: rawResponse }
         }
         // TODO: migrate to object response
         // response.__proto__._raw = clone

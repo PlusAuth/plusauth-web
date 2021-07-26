@@ -2,10 +2,8 @@
   "out": "./docs",
   "name": "PlusAuthWeb",
   "readme": "none",
-  "mode": "file",
   "tsconfig": "./tsconfig.json",
   "theme": "./docs-source/theme",
   "hideGenerator": true,
-  "stripInternal": true,
   "listInvalidSymbolLinks": false
 }

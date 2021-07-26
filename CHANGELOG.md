@@ -1,3 +1,10 @@
+# [0.3.0-beta.0](https://github.com/PlusAuth/plusauth-web/compare/v0.2.0...v0.3.0-beta.0) (2021-07-26)
+
+
+### Features
+
+* accept options for http service ([291ac09](https://github.com/PlusAuth/plusauth-web/commit/291ac096e446b01b0769fdcd5fb6eb648e2459d2))
+
 # [0.2.0](https://github.com/PlusAuth/plusauth-web/compare/v0.1.1...v0.2.0) (2021-02-15)
 
 

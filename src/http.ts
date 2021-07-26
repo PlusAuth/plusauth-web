@@ -43,20 +43,22 @@ export class HttpService {
 
   ['constructor']!: typeof HttpService
 
-  constructor( apiURL: string ) {
+  constructor( apiURL: string, options?: Partial<RequestInit> ) {
     const http: any = {};
     ['get', 'post', 'patch', 'delete'].forEach( method => {
       http[method] = function ( ...args: any[] ) {
-        const fetchOptions: RequestInit = {
+        const fetchOptions: RequestInit = Object.assign( {
           method,
           credentials: 'include',
           mode:        'cors',
-          headers:     {
-            'Content-Type':     'application/json',
-            'Accept':           'application/json',
-            'X-Requested-With': 'XMLHttpRequest'
-          }
-        }
+        }, options || {} )
+
+        fetchOptions.headers = Object.assign( {
+          'Content-Type':     'application/json',
+          'Accept':           'application/json',
+          'X-Requested-With': 'XMLHttpRequest'
+        }, options?.headers || {} )
+
         method !== 'get' ? fetchOptions.body = JSON.stringify( args[1] ) : null
         if ( typeof args[0] !== 'string' ){
           return fetchAsPromise.call( null, apiURL, fetchOptions )

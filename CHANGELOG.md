@@ -1,3 +1,15 @@
+# [0.3.0-beta.1](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0-beta.0...v0.3.0-beta.1) (2021-07-27)
+
+
+### Features
+
+* finger vein mfa type ([e6e3794](https://github.com/PlusAuth/plusauth-web/commit/e6e3794c65c1610983063d2e35fb8975f038f69a))
+
+
+### Performance Improvements
+
+* unnecessary nullish operator ([23b7973](https://github.com/PlusAuth/plusauth-web/commit/23b79737477fb4b712a6200ee6191cdaaabcc7b3))
+
 # [0.3.0-beta.0](https://github.com/PlusAuth/plusauth-web/compare/v0.2.0...v0.3.0-beta.0) (2021-07-26)
 
 

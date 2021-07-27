@@ -11,5 +11,6 @@
 export enum MFACodeType {
   SMS = 'sms',
   EMAIL = 'email',
+  FINGER_VEIN = 'fv',
   OTP = 'otp'
 }

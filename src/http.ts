@@ -57,7 +57,7 @@ export class HttpService {
           'Content-Type':     'application/json',
           'Accept':           'application/json',
           'X-Requested-With': 'XMLHttpRequest'
-        }, options?.headers || {} )
+        }, fetchOptions.headers || {} )
 
         method !== 'get' ? fetchOptions.body = JSON.stringify( args[1] ) : null
         if ( typeof args[0] !== 'string' ){

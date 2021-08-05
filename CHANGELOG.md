@@ -1,3 +1,5 @@
+# [0.3.0-beta.2](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0-beta.1...v0.3.0-beta.2) (2021-08-05)
+
 # [0.3.0-beta.1](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0-beta.0...v0.3.0-beta.1) (2021-07-27)
 
 

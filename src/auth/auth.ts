@@ -77,7 +77,7 @@ export class AuthService extends HttpService {
    * ```
    */
   public updateMissingInformation( fields: { [key: string]: any } ): Promise<any> {
-    return this.http.post( '/updateMissingInformation', fields );
+    return this.http.post( '/account/updateMissingInformation', fields );
   }
 
   /**
@@ -92,7 +92,7 @@ export class AuthService extends HttpService {
    * ```
    */
   public requestResetPassword( email: string ): Promise<any> {
-    return this.http.post( '/forgotPassword', {
+    return this.http.post( '/account/forgotPassword', {
       email,
     } );
   }
@@ -116,7 +116,7 @@ export class AuthService extends HttpService {
    * ```
    */
   public resetPassword( password: string, hash: string ): Promise<any> {
-    return this.http.post( `/resetPassword/${ hash }`, {
+    return this.http.post( `/account/resetPassword/${ hash }`, {
       password,
     } );
   }

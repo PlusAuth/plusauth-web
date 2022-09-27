@@ -1,3 +1,12 @@
+
+
+# [0.3.0-beta.3](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0-beta.2...v0.3.0-beta.3) (2022-09-27)
+
+
+### Features
+
+* webauthn helper functions ([929e414](https://github.com/PlusAuth/plusauth-web/commit/929e4145d2cc105a767d54cff68e5e5ebda2fb5d))
+
 # [0.3.0-beta.2](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0-beta.1...v0.3.0-beta.2) (2021-08-05)
 
 # [0.3.0-beta.1](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0-beta.0...v0.3.0-beta.1) (2021-07-27)
@@ -85,4 +94,3 @@
 * initial dependencies added ([1cf3f08](https://github.com/PlusAuth/plusauth-web/commit/1cf3f0813932038686d1a73e6f3d55e2a12c7f97))
 * mfa code validation method created ([04ce81b](https://github.com/PlusAuth/plusauth-web/commit/04ce81b2479297494845b39f0c46829714bbd31e))
 * verification token type constant created ([8284c2b](https://github.com/PlusAuth/plusauth-web/commit/8284c2ba7228eab6ebfc85f835589e8733f965d8))
-

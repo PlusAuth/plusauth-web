@@ -1,6 +1,6 @@
 {
   "name": "@plusauth/web",
-  "version": "0.3.0-beta.2",
+  "version": "0.3.0-beta.3",
   "description": "PlusAuth Web Util",
   "main": "dist/plusauth-web.js",
   "types": "dist/plusauth-web.d.ts",

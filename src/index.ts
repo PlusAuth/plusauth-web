@@ -2,11 +2,30 @@
  * @packageDocumentation
  */
 
+import {
+  browserSupportsWebAuthn,
+  browserSupportsWebAuthnAutofill,
+  platformAuthenticatorIsAvailable,
+  startAuthentication,
+  startRegistration
+} from '@simplewebauthn/browser';
+
 import { AuthService, MFAService } from './auth';
 
 export * from './http'
 export * from './auth'
 export * from './constants'
+
+/**
+ * @public
+ */
+export {
+  startAuthentication as verifyDevice,
+  startRegistration as registerDevice,
+  platformAuthenticatorIsAvailable as isPlatformAuthenticatorAvailable,
+  browserSupportsWebAuthnAutofill as isWebAuthNAutofillSupported,
+  browserSupportsWebAuthn as isWebAuthNSupported
+}
 
 /**
  * Main class for initializing the library.

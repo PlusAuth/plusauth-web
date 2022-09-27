@@ -1,4 +1,4 @@
-import { MFACodeType } from '../constants/mfa_code_type';
+import { MFACodeType } from '../constants';
 import { HttpService } from '../http';
 
 /**
@@ -22,7 +22,7 @@ export class MFAService extends HttpService {
    * @example
    * Validate SMS code.
    * ```js
-   * mfa.validateCode('123456', 'sms').catch( function(err){
+   * mfa.validateCode('123456', MFACodeType.SMS).catch( function(err){
    *   console.error('Code is not valid', err)
    * })
    * ```
@@ -30,7 +30,7 @@ export class MFAService extends HttpService {
    * @example
    * Validate Email code.
    * ```js
-   * mfa.validateCode('123456', 'email').catch( function(err){
+   * mfa.validateCode('123456', MFACodeType.EMAIL).catch( function(err){
    *   console.error('Code is not valid', err)
    * })
    * ```
@@ -38,7 +38,7 @@ export class MFAService extends HttpService {
    * @example
    * Validate OTP code.
    * ```js
-   * mfa.validateCode('123456', 'otp').catch( function(err){
+   * mfa.validateCode('123456', MFACodeType.OTP).catch( function(err){
    *   console.error('Code is not valid', err)
    * })
    * ```

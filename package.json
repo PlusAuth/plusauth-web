@@ -17,41 +17,44 @@
   ],
   "scripts": {
     "docs": "typedoc src/index.ts",
-    "build": "rimraf dist && bili && api-extractor run",
+    "build": "vite build && api-extractor run",
     "lint": "eslint . --ext .ts --fix",
     "test": "mocha",
-    "prepublishOnly": "yarn test && yarn build",
+    "prepublishOnly": "npm run test && npm run build",
     "release": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN release-it"
   },
   "dependencies": {
+    "@simplewebauthn/browser": "^6.0.0",
     "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "@microsoft/api-extractor": "^7.18.4",
-    "@release-it/conventional-changelog": "^3.0.1",
-    "@types/chai": "^4.2.21",
-    "@types/mocha": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
-    "bili": "^5.0.5",
-    "chai": "^4.3.4",
-    "core-js": "^3.15.2",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@microsoft/api-extractor": "^7.31.2",
+    "@release-it/conventional-changelog": "^5.1.0",
+    "@simplewebauthn/typescript-types": "^6.0.0",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "chai": "^4.3.6",
+    "core-js": "^3.25.3",
     "cross-env": "^7.0.3",
-    "eslint": "^7.31.0",
-    "eslint-plugin-import": "^2.23.4",
-    "husky": "^4.3.8",
-    "lint-staged": "^11.1.1",
-    "mocha": "^9.0.2",
-    "nock": "^13.1.1",
-    "release-it": "^14.10.1",
+    "eslint": "^8.24.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "mocha": "^10.0.0",
+    "nock": "^13.2.9",
+    "release-it": "^15.4.2",
     "rimraf": "^3.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "ts-node": "^10.1.0",
-    "typedoc": "^0.21.4",
-    "typescript": "4.3.5"
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.15",
+    "typescript": "4.8.3",
+    "vite": "^3.1.3",
+    "vite-plugin-dts": "^1.5.0"
   },
   "commitlint": {
     "extends": [
@@ -68,14 +71,8 @@
       ]
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
-    "*.ts": "yarn lint"
+    "*.ts": "npm run lint"
   },
   "publishConfig": {
     "access": "public",

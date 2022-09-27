@@ -3,7 +3,8 @@
   "name": "PlusAuthWeb",
   "readme": "none",
   "tsconfig": "./tsconfig.json",
-  "theme": "./docs-source/theme",
-  "hideGenerator": true,
-  "listInvalidSymbolLinks": false
+  "visibilityFilters": {
+    "external": true
+  },
+  "hideGenerator": true
 }

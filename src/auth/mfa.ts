@@ -41,6 +41,7 @@ export class MFAService extends HttpService {
    * mfa.validateCode('123456', MFACodeType.OTP).catch( function(err){
    *   console.error('Code is not valid', err)
    * })
+   *```
    *
    * @example
    * Register WebAuthN device.
@@ -51,6 +52,7 @@ export class MFAService extends HttpService {
    *      console.error('Registration failed', err)
    *    })
    * })
+   *```
    *
    * @example
    * Verify WebAuthN device.

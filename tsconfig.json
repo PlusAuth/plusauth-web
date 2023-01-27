@@ -15,5 +15,16 @@
   ],
   "include": [
     "src"
-  ]
+  ],
+  "typedocOptions": {
+    "out": "./docs",
+    "readme": "none",
+    "categorizeByGroup": false,
+    "entryPoints": ["src/index.ts"],
+    "excludeProtected": true,
+    "excludePrivate": true,
+    "plugin": [
+      "typedoc-plugin-merge-modules"
+    ]
+  }
 }

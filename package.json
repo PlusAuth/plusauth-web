@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "docs": "typedoc src/index.ts",
+    "docs": "typedoc",
     "build": "vite build && api-extractor run",
     "lint": "eslint . --ext .ts --fix",
     "test": "mocha",
@@ -51,7 +51,8 @@
     "release-it": "^15.5.0",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
-    "typedoc": "^0.23.17",
+    "typedoc": "^0.23.24",
+    "typedoc-plugin-merge-modules": "^4.0.1",
     "typescript": "4.8.4",
     "vite": "^3.1.8",
     "vite-plugin-dts": "^1.6.6"

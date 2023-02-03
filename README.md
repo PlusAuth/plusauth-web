@@ -11,7 +11,7 @@ PlusAuth helper utility intended to use in browsers.
 From PlusAuth CDN (Make sure to check version):
 ```html
 <!-- Latest release -->
-<script src="https://unpkg.com/@plusauth/web@0.3.1/dist/plusauth-web.umd.min.js"></script>
+<script src="https://unpkg.com/@plusauth/web@0.3.1/dist/plusauth-web.umd.js"></script>
 ```
 
 With npm:

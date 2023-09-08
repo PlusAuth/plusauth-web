@@ -21,7 +21,7 @@ export declare class AuthService extends HttpService {
      * Submits user credentials to the endpoint `/signin`.
      *
      * @param fields - Key/Value object for validating user.
-     * @param strategy - PlusAuth strategy to check user. Make sure you have created this strategy
+     * @param connection - PlusAuth strategy to check user. Make sure you have created this strategy
      * in your tenant.
      *
      * @example
@@ -38,7 +38,23 @@ export declare class AuthService extends HttpService {
      */
     signIn(fields: {
         [key: string]: any;
-    }, strategy?: string): Promise<any>;
+    }, connection?: string): Promise<any>;
+    /**
+     * Submits user credentials to the endpoint `/signin`.
+     *
+     * @param method - Passwordless method. For ex. email or sms
+     * @param fields - Key/Value object for validating user.
+     * in your tenant.
+     *
+     * @example
+     * Sign in with email passwordless strategy
+     * ```js
+     *  auth.signInPasswordless( 'email', { code: "123456" } )
+     * ```
+     */
+    signInPasswordless(method: string | 'sms' | 'email' | 'otp', fields: {
+        [key: string]: any;
+    }): Promise<any>;
     /**
      * Posts a request for registering a user.
      *
@@ -255,8 +271,8 @@ export declare class MFAService extends HttpService {
      * })
      * ```
      */
-    validateCode(code: Record<string, any>, codeType: MFACodeType.WEBAUTHN): Promise<any>;
-    validateCode(code: string, codeType: Exclude<MFACodeType, MFACodeType.WEBAUTHN>): Promise<any>;
+    validateCode(codeType: MFACodeType.WEBAUTHN, code: Record<string, any>): Promise<any>;
+    validateCode(codeType: Exclude<MFACodeType, MFACodeType.WEBAUTHN>, code: string): Promise<any>;
 }
 
 /**

@@ -21,7 +21,7 @@
     "build": "vite build && api-extractor run",
     "lint": "eslint . --ext .ts --fix",
     "test": "mocha",
-    "prepublishOnly": "npm run test && npm run build",
+    "prepublish": "npm run test && npm run build",
     "release": "cross-env GITHUB_TOKEN=$GITHUB_TOKEN release-it"
   },
   "dependencies": {

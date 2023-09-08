@@ -275,16 +275,11 @@ function R(e, t) {
   return new Promise(function(n, r) {
     fetch(e, t).then((s) => {
       const a = s.headers.get("content-type");
+      if (s.redirected && a && a.includes("html"))
+        return window.location.assign(s.url), !1;
       let i = null;
       s.text().then((o) => {
-        if (a && a.indexOf("application/json"))
-          i = Object.assign(JSON.parse(o), { _raw: s });
-        else {
-          if (s.redirected && a && a.includes("html"))
-            return window.location.assign(s.url), !1;
-          i = { data: o, _raw: s };
-        }
-        if (s.ok)
+        if (a && a.includes("json") ? i = Object.assign(JSON.parse(o), { _raw: s }) : i = { data: o, _raw: s }, s.ok)
           n(i);
         else {
           if (s.status === 400 && i.error === "xhr_request" && i.location)

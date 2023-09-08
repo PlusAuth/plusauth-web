@@ -1,6 +1,10 @@
 module.exports = {
   "hooks": {
-    "before:init": ["pnpm run test", "pnpm run build"],
+    "before:init": [
+      "pnpm run test",
+      "pnpm run build",
+      "git add dist/* && git commit -m \"chore: build\""
+    ],
   },
   "git": {
     "commitMessage": "chore: release v${version}",

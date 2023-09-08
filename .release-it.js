@@ -1,4 +1,7 @@
 module.exports = {
+  "hooks": {
+    "before:init": ["pnpm run test", "pnpm run build"],
+  },
   "git": {
     "commitMessage": "chore: release v${version}",
     "requireCleanWorkingDir": true,

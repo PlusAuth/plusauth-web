@@ -16,14 +16,17 @@ export default defineConfig({
     rollupOptions: {
       output: [
         {
+          name: 'plusauth-web',
           format: 'cjs',
           entryFileNames: "plusauth-web.js",
         },
         {
+          name: 'plusauth-web',
           format: 'es',
           entryFileNames: "plusauth-web.[format].js",
         },
         {
+          name: 'plusauth-web',
           format: 'umd',
           entryFileNames: "plusauth-web.[format].js",
         },
@@ -32,7 +35,7 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      outputDir: 'types'
+      outDir: 'types'
     })
   ]
 })

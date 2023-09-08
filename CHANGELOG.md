@@ -1,5 +1,13 @@
 
 
+# [0.4.0](https://github.com/PlusAuth/plusauth-web/compare/v0.3.1...v0.4.0) (2023-09-08)
+
+
+### Features
+
+* add signin passwordless method ([eae2d13](https://github.com/PlusAuth/plusauth-web/commit/eae2d13d77cb540950f634edeb4e0079d156f633))
+* follow redirect on post redirects ([a67701e](https://github.com/PlusAuth/plusauth-web/commit/a67701efcde5303e1a3cd79579f466e275c08418))
+
 ## [0.3.1](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0...v0.3.1) (2022-10-19)
 
 # [0.3.0](https://github.com/PlusAuth/plusauth-web/compare/v0.3.0-beta.3...v0.3.0) (2022-10-03)

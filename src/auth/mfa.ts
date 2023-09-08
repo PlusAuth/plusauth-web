@@ -66,18 +66,18 @@ export class MFAService extends HttpService {
    * ```
    */
   public async validateCode(
+    codeType: MFACodeType.WEBAUTHN,
     code: Record<string, any>,
-    codeType: MFACodeType.WEBAUTHN
   ): Promise<any>;
 
   public async validateCode(
+    codeType: Exclude<MFACodeType, MFACodeType.WEBAUTHN>,
     code: string,
-    codeType: Exclude<MFACodeType, MFACodeType.WEBAUTHN>
   ): Promise<any>;
 
   public async validateCode(
+    codeType: MFACodeType,
     code: string | Record<string, any>,
-    codeType: MFACodeType
   ): Promise<any> {
     return this.http.post( `/signin/challenge/${ codeType }`, {
       code

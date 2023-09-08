@@ -1,5 +1,12 @@
 
 
+## [0.4.2](https://github.com/PlusAuth/plusauth-web/compare/v0.4.1...v0.4.2) (2023-09-08)
+
+
+### Performance Improvements
+
+* unnecessary text retrieval for when redirect happened ([8e868ac](https://github.com/PlusAuth/plusauth-web/commit/8e868ac1cf8549f7b18430f37f6593a5a6d85c75))
+
 ## [0.4.1](https://github.com/PlusAuth/plusauth-web/compare/v0.4.0...v0.4.1) (2023-09-08)
 
 # [0.4.0](https://github.com/PlusAuth/plusauth-web/compare/v0.3.1...v0.4.0) (2023-09-08)

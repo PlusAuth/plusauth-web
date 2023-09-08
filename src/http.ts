@@ -5,14 +5,14 @@ function fetchAsPromise( url: string, options: RequestInit ) {
   return new Promise( function ( resolve, reject ){
     fetch( url, options ).then( rawResponse => {
       const contentType = rawResponse.headers.get( 'content-type' )
-      // const clone = rawResponse.clone()
+      if ( rawResponse.redirected && contentType && contentType.includes( 'html' ) ){
+        window.location.assign( rawResponse.url )
+        return false;
+      }
       let response: any = null
       rawResponse.text().then( value => {
-        if ( contentType && contentType.indexOf( 'application/json' ) ){
+        if ( contentType && contentType.includes( 'json' ) ){
           response = Object.assign( JSON.parse( value ), { _raw: rawResponse } )
-        } else if ( rawResponse.redirected && contentType && contentType.includes( 'html' ) ){
-          window.location.assign( rawResponse.url )
-          return false;
         } else {
           response = { data: value, _raw: rawResponse }
         }

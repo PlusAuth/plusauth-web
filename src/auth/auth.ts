@@ -16,7 +16,7 @@ export class AuthService extends HttpService {
    * Submits user credentials to the endpoint `/signin`.
    *
    * @param fields - Key/Value object for validating user.
-   * @param strategy - PlusAuth strategy to check user. Make sure you have created this strategy
+   * @param connection - PlusAuth strategy to check user. Make sure you have created this strategy
    * in your tenant.
    *
    * @example
@@ -31,8 +31,28 @@ export class AuthService extends HttpService {
    *  auth.signIn( { username: "johndoe@example.com", password: "mypassword" }, "myLdapStrategy" )
    * ```
    */
-  public signIn( fields: { [key: string]: any }, strategy?: string ): Promise<any> {
-    return this.http.post( '/signin', { ...fields, strategy } );
+  public signIn( fields: { [key: string]: any }, connection?: string ): Promise<any> {
+    return this.http.post( '/signin', { ...fields, connection } );
+  }
+
+  /**
+   * Submits user credentials to the endpoint `/signin`.
+   *
+   * @param method - Passwordless method. For ex. email or sms
+   * @param fields - Key/Value object for validating user.
+   * in your tenant.
+   *
+   * @example
+   * Sign in with email passwordless strategy
+   * ```js
+   *  auth.signInPasswordless( 'email', { code: "123456" } )
+   * ```
+   */
+  public signInPasswordless(
+    method: string | 'sms' | 'email' | 'otp',
+    fields: { [key: string]: any }
+  ): Promise<any> {
+    return this.http.post( `/signin/passwordless/${ method }`, fields );
   }
 
   /**
